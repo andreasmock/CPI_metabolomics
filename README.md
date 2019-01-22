@@ -27,7 +27,7 @@ CPI_metabolomics
     ## metadata(0):
     ## assays(1): ''
     ## rownames(134): C0 C2 ... SM C26:1 H1
-    ## rowData names(8): id class ... fraction bond_type
+    ## rowData names(2): id class
     ## colnames: NULL
     ## colData names(3): X Gender Age
 
@@ -112,33 +112,20 @@ Access metabolite annotation
 rowData(CPI_metabolomics)
 ```
 
-    ## DataFrame with 134 rows and 8 columns
-    ##              id          class       assay    length n_c22_isobars
-    ##     <character>    <character> <character> <integer>     <integer>
-    ## 1            C0 acylcarnitines        p180        NA            NA
-    ## 2            C2 acylcarnitines        p180        NA            NA
-    ## 3            C3 acylcarnitines        p180        NA            NA
-    ## 4            C4 acylcarnitines        p180        NA            NA
-    ## 5         C14:1 acylcarnitines        p180        NA            NA
-    ## ...         ...            ...         ...       ...           ...
-    ## 130    SM C24:0  sphingolipids        p180        24             2
-    ## 131    SM C24:1  sphingolipids        p180        24             2
-    ## 132    SM C26:0  sphingolipids        p180        26             3
-    ## 133    SM C26:1  sphingolipids        p180        26             1
-    ## 134          H1        hexoses        p180        NA            NA
-    ##     n_isobars  fraction   bond_type
-    ##     <integer> <numeric> <character>
-    ## 1          NA        NA          NA
-    ## 2          NA        NA          NA
-    ## 3          NA        NA          NA
-    ## 4          NA        NA          NA
-    ## 5          NA        NA          NA
-    ## ...       ...       ...         ...
-    ## 130         2         1          NA
-    ## 131         2         1          NA
-    ## 132         3         1          NA
-    ## 133         1         1          NA
-    ## 134        NA        NA          NA
+    ## DataFrame with 134 rows and 2 columns
+    ##              id          class
+    ##     <character>    <character>
+    ## 1            C0 acylcarnitines
+    ## 2            C2 acylcarnitines
+    ## 3            C3 acylcarnitines
+    ## 4            C4 acylcarnitines
+    ## 5         C14:1 acylcarnitines
+    ## ...         ...            ...
+    ## 130    SM C24:0  sphingolipids
+    ## 131    SM C24:1  sphingolipids
+    ## 132    SM C26:0  sphingolipids
+    ## 133    SM C26:1  sphingolipids
+    ## 134          H1        hexoses
 
 Access clinical annotation
 
