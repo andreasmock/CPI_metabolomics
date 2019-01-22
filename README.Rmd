@@ -1,0 +1,55 @@
+---
+title: "CPI metabolomics data set"
+author: Andreas Mock, National Center for Tumor Diseases (NCT) Heidelberg
+output: github_document
+---
+
+# Load required R packages
+
+```{r packages, message=F, warning=F}
+require(SummarizedExperiment)
+```
+
+# Load data set
+
+```{r}
+load("CPI_metabolomics.RData")
+```
+
+Show object summary information:
+
+```{r}
+CPI_metabolomics
+```
+
+The metabolomic data is stored alongside the metabolite annotation and clinical annotation within a `SummarizedExperiment` class object. For more information regarding the see the corresponding [package tutorial](https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html). 
+
+# Access slots with data object
+
+Access metabolomic data
+
+```{r}
+head(assay(CPI_metabolomics))
+```
+
+Access metabolite annotation
+
+```{r}
+rowData(CPI_metabolomics)
+```
+
+Access clinical annotation
+
+```{r}
+colData(CPI_metabolomics)
+```
+
+
+# Session information {.unnumbered}
+
+```{r}
+sessionInfo()
+```
+
+
+
